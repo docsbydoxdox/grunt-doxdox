@@ -8,7 +8,8 @@ module.exports = function (grunt) {
 
     grunt.registerMultiTask('doxdox', 'Generate documentation with doxdox.', function () {
 
-        var input,
+        var done = this.async(),
+            input,
             output,
             config = {
                 title: '',
@@ -59,9 +60,14 @@ module.exports = function (grunt) {
 
             doxdox.parseInput(
                 path.normalize(path.resolve(input)),
-                path.normalize(path.resolve(output)),
                 config
-            );
+            ).then(function (content) {
+
+                fs.writeFileSync(output, content, 'utf8');
+
+                done();
+
+            });
 
         } else {
 
