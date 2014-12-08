@@ -1,10 +1,10 @@
 {
     "name": "grunt-doxdox",
     "description": "Generate documentation with doxdox.",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "license": "MIT",
     "dependencies": {
-        "doxdox": "0.0.16",
+        "doxdox": "0.0.17",
         "extend": "2.0.0"
     },
     "keywords": [

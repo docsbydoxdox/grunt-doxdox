@@ -1,5 +1,9 @@
 #Changelog
 
+##0.0.5 (December 7, 2014)
+
+- Updated doxdox to latest.
+
 ##0.0.4 (December 6, 2014)
 
 - Updated method call to use the returned promise.
