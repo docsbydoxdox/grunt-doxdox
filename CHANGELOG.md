@@ -1,5 +1,11 @@
 #Changelog
 
+##0.0.7 (December 24, 2014)
+
+- Updated doxdox to latest.
+- Changed `utils.findPackage` to `utils.findPackagePath`.
+- Passed package.json contents to `doxdox.parseInput`.
+
 ##0.0.6 (December 12, 2014)
 
 - Updated doxdox to latest.
