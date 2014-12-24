@@ -30,7 +30,7 @@ module.exports = function (grunt) {
 
             if (!config.package) {
 
-                config.package = utils.findPackage(input);
+                config.package = utils.findPackagePath(input);
 
             }
 
@@ -60,7 +60,8 @@ module.exports = function (grunt) {
 
             doxdox.parseInput(
                 path.normalize(path.resolve(input)),
-                config
+                config,
+                config.package
             ).then(function (content) {
 
                 fs.writeFileSync(output, content, 'utf8');
