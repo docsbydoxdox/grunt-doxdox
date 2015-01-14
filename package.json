@@ -4,7 +4,7 @@
     "version": "0.0.8",
     "license": "MIT",
     "dependencies": {
-        "doxdox": "0.1.1",
+        "doxdox": "0.1.2",
         "extend": "2.0.0"
     },
     "keywords": [
