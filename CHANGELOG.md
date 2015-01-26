@@ -1,5 +1,9 @@
 #Changelog
 
+##0.0.10 (January 26, 2015)
+
+- Updated doxdox to latest.
+
 ##0.0.9 (January 14, 2015)
 
 - Updated doxdox to latest.
