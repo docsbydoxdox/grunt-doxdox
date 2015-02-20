@@ -1,18 +1,18 @@
 [![](https://david-dm.org/neogeek/grunt-doxdox.svg?style=flat)](https://david-dm.org/neogeek/grunt-doxdox/) [![](http://img.shields.io/npm/v/grunt-doxdox.svg?style=flat)](https://www.npmjs.org/package/grunt-doxdox)
 
-#grunt-doxdox
+# grunt-doxdox
 
 > Generate documentation with doxdox.
 
-##Installation
+## Installation
 
 ```bash
 $ npm install grunt-doxdox --save-dev
 ```
 
-##Usage
+## Usage
 
-###Basic Options
+### Basic Options
 
 ```javascript
 grunt.initConfig({
@@ -25,7 +25,7 @@ grunt.initConfig({
 });
 ```
 
-###Custom Configuration Options
+### Custom Configuration Options
 
 ```javascript
 grunt.initConfig({
