@@ -1,4 +1,5 @@
-[![](https://david-dm.org/neogeek/grunt-doxdox.svg?style=flat)](https://david-dm.org/neogeek/grunt-doxdox/) [![](http://img.shields.io/npm/v/grunt-doxdox.svg?style=flat)](https://www.npmjs.org/package/grunt-doxdox)
+[![](https://david-dm.org/neogeek/grunt-doxdox.svg?style=flat)](https://david-dm.org/neogeek/grunt-doxdox/)
+[![](http://img.shields.io/npm/v/grunt-doxdox.svg?style=flat)](https://www.npmjs.org/package/grunt-doxdox)
 
 # grunt-doxdox
 
