@@ -4,8 +4,8 @@
     "version": "0.0.13",
     "license": "MIT",
     "dependencies": {
-        "doxdox": "0.1.6",
-        "extend": "2.0.0"
+        "doxdox": "0.1.7",
+        "extend": "2.0.1"
     },
     "keywords": [
         "gruntplugin",
