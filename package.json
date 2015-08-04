@@ -12,7 +12,9 @@
         "documentation",
         "html",
         "bootstrap",
-        "markdown"
+        "markdown",
+        "dash",
+        "dox"
     ],
     "authors": [
         {
