@@ -64,7 +64,7 @@ module.exports = function (grunt) {
                 config.package
             ).then(function (content) {
 
-                fs.writeFileSync(output, content, 'utf8');
+                grunt.file.write(output, content, {encoding: 'utf8'});
 
                 done();
 
