@@ -1,5 +1,9 @@
 #Changelog
 
+##0.0.17 (November 7, 2015)
+
+- Updated doxdox to latest.
+
 ##0.0.16 (September 17, 2015)
 
 - Use Grunt API to write file (by [@mmarcon](https://github.com/mmarcon))
