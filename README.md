@@ -1,14 +1,13 @@
-[![](https://david-dm.org/neogeek/grunt-doxdox.svg?style=flat)](https://david-dm.org/neogeek/grunt-doxdox/)
-[![](http://img.shields.io/npm/v/grunt-doxdox.svg?style=flat)](https://www.npmjs.org/package/grunt-doxdox)
-
 # grunt-doxdox
 
 > Generate documentation with doxdox.
 
+[![NPM Version](http://img.shields.io/npm/v/grunt-doxdox.svg)](https://www.npmjs.org/package/grunt-doxdox)
+
 ## Installation
 
 ```bash
-$ npm install grunt-doxdox --save-dev
+$ npm install grunt grunt-doxdox --save-dev
 ```
 
 ## Usage
@@ -16,31 +15,46 @@ $ npm install grunt-doxdox --save-dev
 ### Basic Options
 
 ```javascript
-grunt.initConfig({
-    doxdox: {
-        dev: {
-            input: 'script.js',
-            output: 'docs/index.html'
+module.exports = function (grunt) {
+
+    grunt.loadNpmTasks('grunt-doxdox');
+
+    grunt.initConfig({
+        'doxdox': {
+            'dev': {
+                'inputs': ['facade.js'],
+                'output': 'docs.html'
+            }
         }
-    }
-});
+    });
+
+    grunt.registerTask('default', ['doxdox']);
+
+}
 ```
 
 ### Custom Configuration Options
 
 ```javascript
-grunt.initConfig({
-    doxdox: {
-        dev: {
-            input: 'script.js',
-            output: 'docs/index.html',
-            config: {
-                title: 'Sample Title',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-                layout: 'docs/template.hbs',
-                package: 'package.json'
+module.exports = function (grunt) {
+
+    grunt.loadNpmTasks('grunt-doxdox');
+
+    grunt.initConfig({
+        'doxdox': {
+            'dev': {
+                'inputs': ['script.js'],
+                'output': 'docs/index.html',
+                'config': {
+                    'title': 'Sample Title',
+                    'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+                    'layout': 'docs/template.hbs'
+                }
             }
         }
-    }
-});
+    });
+
+    grunt.registerTask('default', ['doxdox']);
+
+}
 ```

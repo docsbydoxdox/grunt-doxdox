@@ -1,31 +1,30 @@
 {
-    "name": "grunt-doxdox",
-    "description": "Generate documentation with doxdox.",
-    "version": "0.0.19",
-    "license": "MIT",
-    "dependencies": {
-        "doxdox": "0.1.11",
-        "extend": "3.0.0"
-    },
-    "keywords": [
-        "gruntplugin",
-        "documentation",
-        "html",
-        "bootstrap",
-        "markdown",
-        "dash",
-        "dox"
-    ],
-    "authors": [
-        {
-            "name": "Scott Doxey",
-            "email": "hello@scottdoxey.com",
-            "homepage": "http://scottdoxey.com/"
-        }
-    ],
-    "homepage": "https://github.com/neogeek/grunt-doxdox",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/neogeek/grunt-doxdox.git"
+  "name": "grunt-doxdox",
+  "description": "Generate documentation with doxdox.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "doxdox": "^1.1.x"
+  },
+  "keywords": [
+    "gruntplugin",
+    "documentation",
+    "jsdoc",
+    "bootstrap",
+    "markdown",
+    "handlebars",
+    "dox"
+  ],
+  "authors": [
+    {
+      "name": "Scott Doxey",
+      "email": "hello@scottdoxey.com",
+      "homepage": "http://scottdoxey.com/"
     }
+  ],
+  "homepage": "https://github.com/neogeek/grunt-doxdox",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/neogeek/grunt-doxdox.git"
+  }
 }
