@@ -6,6 +6,13 @@
   "dependencies": {
     "doxdox": "^1.1.x"
   },
+  "devDependencies": {
+    "@neogeek/eslint-config-standards": "1.7.0",
+    "eslint": "3.9.1"
+  },
+  "scripts": {
+    "test": "make lint"
+  },
   "keywords": [
     "gruntplugin",
     "documentation",

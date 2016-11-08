@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "@neogeek/eslint-config-standards"
+  ],
+  "rules": {
+    "no-invalid-this": 0
+  }
+}
