@@ -1,30 +1,31 @@
 const doxdox = require('doxdox');
 
-module.exports = (grunt) => {
+module.exports = grunt => {
 
-    grunt.registerMultiTask('doxdox', 'Generate documentation with doxdox.', function () {
+    grunt.registerMultiTask('doxdox', 'Generate documentation with doxdox.', function plugin () {
 
         const done = this.async();
 
-        if (!this.data.config) {
+        const pkg = grunt.file.readJSON('package.json');
 
-            this.data.config = {};
+        const {inputs, output} = this.data;
 
-        }
+        const {description, ignore, layout, parser, title} = this.data.config || {};
 
-        doxdox.parseInputs(this.data.inputs, {
-            'title': this.data.config.title || 'Untitled Project',
-            'description': this.data.config.description || '',
-            'ignore': (this.data.config.ignore || '').split(/\s*,\s*/),
-            'parser': this.data.config.parser || 'dox',
-            'layout': this.data.config.layout || 'markdown'
+        doxdox.parseInputs(inputs, {
+            'description': description || pkg.description || '',
+            'ignore': (ignore || '').split(/\s*,\s*/),
+            'layout': (layout || 'markdown').toLowerCase(),
+            'parser': (parser || 'dox').toLowerCase(),
+            pkg,
+            'title': title || pkg.name || 'Untitled Project'
         }).then(content => {
 
-            grunt.file.write(this.data.output, content, {'encoding': 'utf8'});
+            grunt.file.write(output, content, {'encoding': 'utf8'});
 
             done();
 
-        })
+        });
 
     });
 
