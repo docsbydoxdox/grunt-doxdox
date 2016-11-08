@@ -21,9 +21,9 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         'doxdox': {
-            'dev': {
+            'markdown': {
                 'inputs': ['facade.js'],
-                'output': 'docs.html'
+                'output': 'docs.md'
             }
         }
     });
@@ -42,7 +42,7 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         'doxdox': {
-            'dev': {
+            'html': {
                 'inputs': ['script.js'],
                 'output': 'docs/index.html',
                 'config': {
