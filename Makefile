@@ -4,4 +4,4 @@ test:
 	make lint
 
 lint:
-	$(BIN)/eslint tests/doxdox.js
+	$(BIN)/eslint tasks/doxdox.js
