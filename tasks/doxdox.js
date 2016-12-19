@@ -7,19 +7,20 @@ module.exports = grunt => {
 
         const done = this.async();
 
-        const {inputs, output} = this.data;
+        const inputs = this.data.inputs;
+        const output = this.data.output;
 
-        const {description, ignore, layout, packageFile, parser, title} = this.data.config || {};
+        const config = this.data.config || {};
 
-        const pkg = grunt.file.readJSON(utils.findPackageFileInPath(packageFile || 'package.json'));
+        const pkg = grunt.file.readJSON(utils.findPackageFileInPath(config.package || 'package.json'));
 
         doxdox.parseInputs(inputs, {
-            'description': description || pkg.description || '',
-            'ignore': (ignore || '').split(/\s*,\s*/),
-            'layout': (layout || 'markdown').toLowerCase(),
-            'parser': (parser || 'dox').toLowerCase(),
+            'description': config.description || pkg.description || '',
+            'ignore': (config.ignore || '').split(/\s*,\s*/),
+            'layout': (config.layout || 'markdown').toLowerCase(),
+            'parser': (config.parser || 'dox').toLowerCase(),
             pkg,
-            'title': title || pkg.name || 'Untitled Project'
+            'title': config.title || pkg.name || 'Untitled Project'
         }).then(content => {
 
             grunt.file.write(output, content, {'encoding': 'utf8'});

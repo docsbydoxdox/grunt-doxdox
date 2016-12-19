@@ -14,7 +14,7 @@ module.exports = grunt => {
                     'title': 'Sample Title',
                     'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
                     'layout': 'test/fixtures/template.hbs',
-                    'packageFile': 'test/fixtures/package.json'
+                    'package': 'test/fixtures/package.json'
                 }
             }
         },
