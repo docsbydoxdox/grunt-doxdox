@@ -1,3 +1,11 @@
+test/
+
+temp/
+
 .eslintrc
+
+.travis.yml
+
+Gruntfile.js
 
 Makefile

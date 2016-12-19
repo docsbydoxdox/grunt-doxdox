@@ -1,4 +1,5 @@
 const doxdox = require('doxdox');
+const utils = require('doxdox/lib/utils');
 
 module.exports = grunt => {
 
@@ -6,11 +7,11 @@ module.exports = grunt => {
 
         const done = this.async();
 
-        const pkg = grunt.file.readJSON('package.json');
-
         const {inputs, output} = this.data;
 
-        const {description, ignore, layout, parser, title} = this.data.config || {};
+        const {description, ignore, layout, packageFile, parser, title} = this.data.config || {};
+
+        const pkg = grunt.file.readJSON(utils.findPackageFileInPath(packageFile || 'package.json'));
 
         doxdox.parseInputs(inputs, {
             'description': description || pkg.description || '',

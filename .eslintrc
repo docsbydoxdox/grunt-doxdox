@@ -3,6 +3,7 @@
     "@neogeek/eslint-config-standards"
   ],
   "rules": {
-    "no-invalid-this": 0
+    "no-invalid-this": 0,
+    "sort-keys": 0
   }
 }

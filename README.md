@@ -48,7 +48,8 @@ module.exports = function (grunt) {
                 'config': {
                     'title': 'Sample Title',
                     'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-                    'layout': 'docs/template.hbs'
+                    'layout': 'docs/template.hbs',
+                    'packageFile': 'package.json'
                 }
             }
         }
