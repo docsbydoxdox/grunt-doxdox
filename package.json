@@ -17,6 +17,9 @@
     "grunt-mocha-test": "0.13.2",
     "mocha": "3.2.0"
   },
+  "peerDependencies": {
+    "grunt": "~1.0.1"
+  },
   "scripts": {
     "test": "make test"
   },
