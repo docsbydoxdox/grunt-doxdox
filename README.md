@@ -2,6 +2,7 @@
 
 > Generate documentation with doxdox.
 
+[![Build Status](https://travis-ci.org/neogeek/grunt-doxdox.svg?branch=master)](https://travis-ci.org/neogeek/grunt-doxdox)
 [![NPM Version](http://img.shields.io/npm/v/grunt-doxdox.svg)](https://www.npmjs.org/package/grunt-doxdox)
 
 ## Installation
