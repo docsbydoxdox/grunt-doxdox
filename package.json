@@ -7,11 +7,11 @@
   },
   "license": "MIT",
   "dependencies": {
-    "doxdox": "^1.1.x"
+    "doxdox": "~2.0.1"
   },
   "devDependencies": {
-    "@neogeek/eslint-config-standards": "1.7.0",
-    "eslint": "3.9.1"
+    "@neogeek/eslint-config-standards": "1.10.0",
+    "eslint": "3.12.2"
   },
   "scripts": {
     "test": "make lint"
