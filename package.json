@@ -1,7 +1,7 @@
 {
   "name": "grunt-doxdox",
   "description": "Generate documentation with doxdox.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "engines": {
     "node": ">=4.0"
   },
