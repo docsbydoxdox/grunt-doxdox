@@ -4,6 +4,7 @@
   ],
   "rules": {
     "no-invalid-this": 0,
+    "prefer-destructuring": 0,
     "sort-keys": 0
   }
 }
