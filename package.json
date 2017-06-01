@@ -21,7 +21,8 @@
     "grunt": "~1.0.1"
   },
   "scripts": {
-    "test": "make test"
+    "test": "npm run lint && grunt test",
+    "lint": "eslint ."
   },
   "keywords": [
     "gruntplugin",
