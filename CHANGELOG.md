@@ -2,11 +2,11 @@
 
 ## 2.0.0 (December 19, 2016)
 
-- Updated Grunt task to work with latest version of doxdox.
+- Updated doxdox to latest.
 
 ## 1.0.0 (November 7, 2016)
 
-- Updated Grunt task to work with latest version of doxdox.
+- Updated doxdox to latest.
 
 ## 0.0.19 (March 25, 2016)
 
