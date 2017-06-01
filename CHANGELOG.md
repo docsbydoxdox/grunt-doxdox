@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.1 (June 1, 2017)
+
+- Updated doxdox to latest.
+
 ## 2.0.0 (December 19, 2016)
 
 - Updated doxdox to latest.
