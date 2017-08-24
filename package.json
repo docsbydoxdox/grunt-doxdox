@@ -10,7 +10,7 @@
     "doxdox": "~2.0.3"
   },
   "devDependencies": {
-    "@neogeek/eslint-config-standards": "^1.15.0",
+    "@neogeek/eslint-config-standards": "^2.0.0",
     "eslint": "^4.5.0",
     "grunt": "^1.0.1",
     "grunt-mkdir": "^1.0.0",
