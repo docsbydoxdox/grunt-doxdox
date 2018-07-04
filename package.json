@@ -7,7 +7,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "doxdox": "~2.0.3"
+    "doxdox": "~2.0.3",
+    "snyk": "^1.88.1"
   },
   "devDependencies": {
     "@neogeek/eslint-config-standards": "^1.15.0",
@@ -22,7 +23,9 @@
   },
   "scripts": {
     "test": "npm run lint && grunt test",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "gruntplugin",
@@ -44,5 +47,6 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/neogeek/grunt-doxdox.git"
-  }
+  },
+  "snyk": true
 }
