@@ -7,7 +7,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "doxdox": "~2.0.3"
+    "doxdox": "~3.0.0"
   },
   "devDependencies": {
     "@neogeek/eslint-config-standards": "^1.15.0",
